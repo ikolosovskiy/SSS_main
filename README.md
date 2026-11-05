@@ -13,7 +13,7 @@ style.css         — стилі (кольори, шрифт Raleway, аніма
 main.js           — переліт логотипа, лічильники, поява напрямів, меню
 hero-forum*.jpg   — фото першого екрана (3 розміри: телефон, ноутбук, великий екран)
 logo26.png        — логотип
-star-amber.png, star-yellow.png, flower-amber.png — брендові фігури
+star-yellow.png, star-yellow-bb.png, flower-orange-bb.png — брендові фігури
 favicon.png       — іконка вкладки
 ```
 

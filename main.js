@@ -33,7 +33,7 @@
       home.style.opacity = on ? '1' : '0';
       home.style.visibility = on ? 'visible' : 'hidden';
       badge.style.transition = 'box-shadow .3s ease';
-      badge.style.boxShadow = on ? '0 6px 24px rgba(2,21,56,.25)' : '0 6px 24px rgba(2,21,56,0)';
+      badge.style.boxShadow = on ? '0 6px 24px rgba(30,30,30,.25)' : '0 6px 24px rgba(30,30,30,0)';
     }
     function flyTo(toBadge) {
       var my = ++token;
