@@ -97,3 +97,13 @@ html{-webkit-text-size-adjust:100%}
 /* Логотип першого екрана не ширший за екран (маленькі телефони) */
 .hero-logo-static img,.fly-logo{height:auto !important;width:calc(var(--lh) * var(--ls) * 7.908);max-width:calc(100vw - 32px)}
 @media (max-width:760px){.hero-logo-static{padding:0 16px !important}}
+
+/* Паралакс фото — нативна анімація прокрутки (працює на рівні браузера, без ривків) */
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline: scroll()){
+    .hero-wrap{animation:heroPar linear both;animation-timeline:scroll(root);animation-range:0 900px}
+  }
+}
+@keyframes heroPar{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,270px,0)}}
+.fly-logo{opacity:1 !important}
+.fly-logo{z-index:55 !important}
