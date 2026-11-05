@@ -3,8 +3,8 @@ a{color:#214E34}a:hover{color:#1E1E1E}
 a:focus-visible,button:focus-visible{outline:3px solid #E09F3E;outline-offset:3px}
 .top a{color:#FFFFFF;text-decoration:none}
 .top .nav a:hover{text-decoration:underline;text-underline-offset:6px}
-.big-row{color:#FFFFFF;text-decoration:none}
-.big-row:hover .t{color:#FFF3B0}
+.big-row{color:#214E34;text-decoration:none}
+.big-row:hover .t{color:#021538 !important}
 .row-link{color:#1E1E1E;text-decoration:none}
 .row-link:hover .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
 .foot a{color:#FFFFFF;text-decoration:none}
@@ -75,3 +75,25 @@ a:focus-visible,button:focus-visible{outline:3px solid #E09F3E;outline-offset:3p
 .js .dir-row.on{--dop:1;--dnt:none;--ddt:none;--dlt:scaleX(1)}
 #site-search::placeholder{color:rgba(255,255,255,.5)}
 
+
+/* Мобільна адаптація */
+@media (hover: none) {
+  .big-row:hover .t{transform:none;color:inherit}
+  .big-row:hover .arr{opacity:0;transform:translateX(-12px)}
+  .btn:hover{transform:none}
+  .row-link:hover .t{text-decoration:none}
+}
+@media (max-width:760px) {
+  #support .shape-spin{left:16px !important;top:28px !important;width:44px !important}
+  #support .shape-spin-r{right:16px !important;bottom:28px !important;top:auto !important;width:48px !important}
+  .hero-img{object-position:center 72% !important}
+}
+.fly-logo,.hero-wrap{backface-visibility:hidden}
+html{-webkit-text-size-adjust:100%}
+@media (max-width:760px) {
+  section[aria-labelledby="hero-title"]{padding:0 12px !important}
+  section[aria-labelledby="hero-title"] > div{padding:28px 20px 0 !important}
+}
+/* Логотип першого екрана не ширший за екран (маленькі телефони) */
+.hero-logo-static img,.fly-logo{height:auto !important;width:calc(var(--lh) * var(--ls) * 7.908);max-width:calc(100vw - 32px)}
+@media (max-width:760px){.hero-logo-static{padding:0 16px !important}}
