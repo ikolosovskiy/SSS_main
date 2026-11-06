@@ -12,7 +12,7 @@ index.html        — сторінка
 style.css         — стилі (кольори, шрифт Raleway, анімації)
 main.js           — переліт логотипа, лічильники, поява напрямів, меню
 hero-forum*.jpg   — фото першого екрана (3 розміри: телефон, ноутбук, великий екран)
-logo26.png        — логотип
+logo26.png, logo-green.png — логотип (білий варіант через фільтр і зелений для футера)
 star-yellow.png, star-yellow-bb.png, flower-orange-bb.png — брендові фігури
 favicon.png       — іконка вкладки
 ```

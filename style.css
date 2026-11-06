@@ -107,3 +107,8 @@ html{-webkit-text-size-adjust:100%}
 @keyframes heroPar{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,270px,0)}}
 .fly-logo{opacity:1 !important}
 .fly-logo{z-index:55 !important}
+
+.portal-domain .pd-arr{display:inline-block;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.portal-domain:hover .pd-arr{transform:translate(8px,-8px)}
+.portal-domain:hover span:first-child{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:10px}
+.foot a{color:#1E1E1E !important}
